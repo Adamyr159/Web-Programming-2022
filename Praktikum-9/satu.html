@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 1.2em;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            height: 10vh;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            padding: 1em;
+            border-radius: 2em;
+        }
+        a:hover {
+            background-image: linear-gradient(rgb(27, 218, 36), rgb(252, 252, 252));        
+        }
+        .container {    
+            width: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .main {
+            width: 100%;
+            border: 1px solid rgb(10, 7, 7);
+            box-shadow: 3px 5px;
+            border-radius: 10px;
+            padding: 1.5em;
+            align-items: center;
+            background-color: rgb(187, 187, 187);
+        }
+        input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            height: 25px;
+        }
+        button {
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="satu.html">Nomor 1</a>
+                </li>
+                <li>
+                    <a href="dua.html">Nomor 2</a>
+                </li>
+                <li>
+                    <a href="tiga.html">Nomor 3</a>
+                </li>
+                <li>
+                    <a href="empat.html">Nomor 4</a>
+                </li>
+                <li>
+                    <a href="lima.html">Nomor 5</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="main">
+            <div>
+                <label for="nama">Username</label> 
+                <input type="text" value="" id="nama">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password</label>
+                <input type="password"  value="" id="password">
+            <br> 
+            </div>
+                <button type="submit" onclick="login()">Login</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        const failLogin = () => alert("username atau password salah")
+
+        const successLogin = () => {
+            // console.log("username benar");
+            location.href = "loginSukses.html";
+        }
+
+        const login = () => {
+            const username = document.getElementById("nama").value;
+            const pass = document.getElementById("password").value;
+            console.log(username);
+            console.log(pass);
+            if(username === 'ahmad2017' && pass === 'integrity'){
+                successLogin();
+            } else {
+                failLogin()
+            }
+        }
+    </script>
+</body>
+</html>

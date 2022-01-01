@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal no.3 </title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+    }
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+    .navbar {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    a {
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        padding: 1em;
+        border-radius: 2em;
+    }
+    a:hover {
+        background-image: linear-gradient(rgb(27, 218, 36), rgb(252, 252, 252));        
+    }
+    
+    .container {
+      border:1px solid black;
+      padding:10px;
+      width: 50%;
+      background-color: rgb(212, 229, 231);
+      margin: auto;
+    }
+    .pesanS1 {
+      height:50vh;
+      width:100%;
+      margin-bottom:10px;
+      overflow:scroll;
+      scroll-behavior: auto;
+      box-sizing: border-box;
+    }
+    .pesan1 {
+      height:30px;
+      border:1px solid black;
+      width: 75%;
+      box-sizing: border-box;
+    }
+    .btn {
+      height:30px;
+      width:23%;
+      float: right;
+      text-transform: uppercase;
+    }
+    
+    </style>
+
+
+</head>
+<body>
+
+  <nav>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="satu.html">Nomor 1</a>
+            </li>
+            <li>
+                <a href="dua.html">Nomor 2</a>
+            </li>
+            <li>
+                <a href="tiga.html">Nomor 3</a>
+            </li>
+            <li>
+                <a href="empat.html">Nomor 4</a>
+            </li>
+            <li>
+                <a href="lima.html">Nomor 5</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  
+  <h1 style="text-align:center;">Chat Box</h1>
+  <div class="container">
+    <div class="pesanS1" id="pesanS1"></div>
+      <input type="text" id="pesan1" class="pesan1">
+      <button class="btn" onclick="kirimPesan()">kirim</button>
+  </div>
+
+  <script type="text/javascript">
+    let terima = document.getElementById("pesan1");
+    let jawab = document.getElementById("pesanS1");
+    let chattt = terima.value;
+
+    function kirimPesan() {
+      jawab.innerHTML += `${terima.value} <br /> `;
+      scrollToBottom("pesanS1");
+      document.getElementById("pesan1").value = ""
+  
+    }
+    function scrollToBottom(id) {
+      let div = document.getElementById(id);
+      div.scrollTop = div.scrollHeight - div.clientHeight;
+    }
+  </script>
+</body>
+</html>
