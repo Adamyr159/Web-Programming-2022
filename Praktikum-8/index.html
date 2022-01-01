@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 1</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h3>Soal Nomor 4</h3>
+    <form>
+      <input type="text" id="bil1" placeholder="Masukkan Bilangan" onchange="hitung()" />
+      <br />+
+      <br />
+      <input type="text" id="bil2" placeholder="Masukkan Bilangan" onchange="hitung()" />
+      <br />=
+      <br />
+      <input type="text" placeholder="Hasil" id="bil3" />
+    </form>
+
+    <script>
+      function hitung() {
+        let x = Number(document.getElementById('bil1').value);
+        let y = Number(document.getElementById('bil2').value);
+        let z = x + y;
+        document.getElementById('bil3').value = z;
+      }
+    </script>
+  </body>
+</html>
