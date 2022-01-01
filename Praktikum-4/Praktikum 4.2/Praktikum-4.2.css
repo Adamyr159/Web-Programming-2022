@@ -1,0 +1,120 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all {
+    border:2px solid black;
+    width: 60%;
+    margin:auto;
+    height: 100vh;
+}
+.navbar {
+    display:flex;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.navbar-left {
+    width:75%;
+    display: flex;
+    margin: auto;
+}
+.icon {
+    width: 31px;
+    padding-left:15px;
+}
+.site-name {
+    font-size: 20px;
+    font-weight:bold;
+    text-transform: capitalize;
+    margin-right: 25px;
+}
+.categori {
+    color:black;
+}
+.link {
+    text-decoration: none;
+    color:black;
+}
+.navbar-right {
+    display:flex;
+    width: 25%;
+    padding-left:20px;
+}
+.icon2 {
+    width:30px;
+}
+.cart1{
+    font-size:15px;
+    text-transform:uppercase;
+    padding-top:7px;
+}
+
+/* content */
+.main {
+    margin: 10px;
+    display: flex;
+}
+.table {
+    width: 60%;
+}
+.td1 {
+    text-align: center;
+}
+.centang {
+    width: 50px;
+}
+.order {
+    padding: 5px 0 5px;
+}
+.customer {
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.dua {
+    text-align: left;
+    padding-top: 10px;
+}
+.kartu-tulisan {
+    display: flex;
+}
+.kartu {
+    width: 30px;
+}
+.tulisan {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+/* aside */
+.aside {
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    margin-top: 0;
+    padding: 15px;
+}
+.summari {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.duatiga {
+    font-weight: bold;
+}
+
+/* footer */
+.footer {
+    display: flex;
+}
+.hr {
+    margin-top: 100px;
+}
+.footer-right {
+    margin-left: auto;
+}
